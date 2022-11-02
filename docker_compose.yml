@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  bot:
+    container_name: iluvcats
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /opt/services/bot/hw3_3
